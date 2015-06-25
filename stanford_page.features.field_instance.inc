@@ -78,6 +78,45 @@ function stanford_page_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-stanford_page-field_s_contact_email'
+  $field_instances['node-stanford_page-field_s_contact_email'] = array(
+    'bundle' => 'stanford_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_contact_email',
+    'label' => 'test',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 42,
+    ),
+  );
+
   // Exported field_instance: 'node-stanford_page-field_s_image_info'
   $field_instances['node-stanford_page-field_s_image_info'] = array(
     'bundle' => 'stanford_page',
@@ -311,10 +350,12 @@ function stanford_page_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Featured Image');
-  t('File');
+  t('File Insert');
   t('Image insert');
   t('Select a featured image for the page and add an optional caption.');
+  t('Upload and insert file links into your content');
   t('Use this to Insert images into the text.');
+  t('test');
 
   return $field_instances;
 }
