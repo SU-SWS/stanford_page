@@ -25,6 +25,7 @@ function stanford_page_field_default_field_bases() {
     'locked' => 0,
     'module' => 'file',
     'settings' => array(
+      'display_default' => 0,
       'display_field' => 1,
       'uri_scheme' => 'public',
     ),
