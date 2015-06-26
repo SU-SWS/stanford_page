@@ -86,10 +86,7 @@ function stanford_page_strongarm() {
         'title' => array(
           'weight' => '0',
         ),
-        'path' => array(
-          'weight' => '5',
-        ),
-        'metatags' => array(
+        '
           'weight' => '40',
         ),
         'redirect' => array(
