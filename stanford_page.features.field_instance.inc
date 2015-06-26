@@ -307,13 +307,81 @@ function stanford_page_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-stanford_page-field_test_field_0'
+  $field_instances['node-stanford_page-field_test_field_0'] = array(
+    'bundle' => 'stanford_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'TEST FIELD',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_test_field_0',
+    'label' => 'TEST FIELD',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'content_editor_text_format' => 'content_editor_text_format',
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'content_editor_text_format' => array(
+              'weight' => -10,
+            ),
+            'filtered_html' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 41,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
   t('Featured Image');
-  t('File');
+  t('File Insert');
   t('Image insert');
   t('Select a featured image for the page and add an optional caption.');
+  t('TEST FIELD');
+  t('Upload and insert file links into your content');
   t('Use this to Insert images into the text.');
 
   return $field_instances;
