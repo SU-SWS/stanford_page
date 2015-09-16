@@ -62,6 +62,7 @@ features[variable][] = node_preview_stanford_page
 features[variable][] = node_submitted_stanford_page
 features[variable][] = pathauto_node_stanford_page_pattern
 features[variable][] = save_continue_stanford_page
+features[views_view][] = stanford_page
 features[views_view][] = stanford_page_manage
 features_exclude[field_base][body] = body
 project status url = https://github.com/SU-SWS/stanford_page
