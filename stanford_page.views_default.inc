@@ -42,7 +42,11 @@ function stanford_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_page_testimonial']['table'] = 'field_data_field_s_page_testimonial';
   $handler->display->display_options['fields']['field_s_page_testimonial']['field'] = 'field_s_page_testimonial';
   $handler->display->display_options['fields']['field_s_page_testimonial']['label'] = '';
+  $handler->display->display_options['fields']['field_s_page_testimonial']['element_type'] = 'div';
   $handler->display->display_options['fields']['field_s_page_testimonial']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_page_testimonial']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_s_page_testimonial']['element_wrapper_class'] = 'quote';
+  $handler->display->display_options['fields']['field_s_page_testimonial']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_s_page_testimonial']['settings'] = array(
     'custom_link_to_entity' => 0,
     'custom_prefix' => '',
@@ -61,6 +65,8 @@ function stanford_page_views_default_views() {
   $handler->display->display_options['fields']['field_s_page_testimonial_author']['table'] = 'field_data_field_s_page_testimonial_author';
   $handler->display->display_options['fields']['field_s_page_testimonial_author']['field'] = 'field_s_page_testimonial_author';
   $handler->display->display_options['fields']['field_s_page_testimonial_author']['label'] = '';
+  $handler->display->display_options['fields']['field_s_page_testimonial_author']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_page_testimonial_author']['alter']['text'] = '<span class="credits">&mdash; [field_s_page_testimonial_author]</span>';
   $handler->display->display_options['fields']['field_s_page_testimonial_author']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_s_page_testimonial_author']['settings'] = array(
     'custom_link_to_entity' => 0,
