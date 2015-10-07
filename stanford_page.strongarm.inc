@@ -80,6 +80,9 @@ function stanford_page_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
+      'stanford_huge_landscape' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
