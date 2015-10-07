@@ -294,7 +294,7 @@ function stanford_page_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -391,22 +391,9 @@ function stanford_page_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'custom_link_to_entity' => '',
-          'custom_prefix' => '',
-          'custom_reverse' => '',
-          'custom_strip_preserve' => '',
-          'custom_strip_tags' => '',
-          'custom_strtolower' => '',
-          'custom_strtoupper' => '',
-          'custom_suffix' => '',
-          'custom_trim' => '',
-          'custom_ucfirst' => '',
-          'custom_ucwords' => '',
-        ),
-        'type' => 'text_default',
-        'weight' => 7,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -489,22 +476,9 @@ function stanford_page_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'custom_link_to_entity' => '',
-          'custom_prefix' => '',
-          'custom_reverse' => '',
-          'custom_strip_preserve' => '',
-          'custom_strip_tags' => '',
-          'custom_strtolower' => '',
-          'custom_strtoupper' => '',
-          'custom_suffix' => '',
-          'custom_trim' => '',
-          'custom_ucfirst' => '',
-          'custom_ucwords' => '',
-        ),
-        'type' => 'text_default',
-        'weight' => 8,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'hidden',
