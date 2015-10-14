@@ -38,7 +38,7 @@ function stanford_page_context_default_contexts() {
           'module' => 'views',
           'delta' => 'stanford_page-block',
           'region' => 'sidebar_first',
-          'weight' => '10',
+          'weight' => '45',
         ),
       ),
     ),
