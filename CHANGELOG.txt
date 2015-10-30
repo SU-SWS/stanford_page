@@ -1,6 +1,20 @@
 Stanford Page x.x-x.x xxxx-xx-xx
 --------------------------------
 
+Stanford Page 7.x-2.2-jsvpsa 2015-06-26
+---------------------------------------
+- VPSADEV-146: Added author exposed filter to manage content view and updated with 2.x-dev branch
+- Added Testimonial fields and Context
+- Removed context, added VBO operations
+- Added testimonial block view based on vpsa page
+- VPSADEV-350: Removed specific page render code for a more global fix
+- VPSADEV-296: Hide page title on node template on display suite view mode switch
+- Changed testimonial view block weight so it's at the bottom
+- hide testimonial and author field from node display
+- Rewrite to testimonial field
+- update to vpsa page Context
+- Added testimonial block view based on vpsa page
+
 Stanford Page 7.x-2.1 2015-06-26
 ---------------------------------------
 - Removed foreign keys from features export.
