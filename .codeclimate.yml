@@ -5,6 +5,8 @@ engines:
     enabled: true
   phpcodesniffer:
     enabled: true
+    config:
+      standard: "Drupal"
   phpmd:
     enabled: true
   scss-lint:
@@ -16,6 +18,9 @@ ratings:
   - "**.profile"
   - "**.php"
   - "**.install"
+  - "**.js"
+  - "**.css"
+  - "**.scss"
 ##exclude these files/paths
 exclude_paths:
 - "**.features.**"
@@ -25,4 +30,3 @@ exclude_paths:
 - "**.bean.inc"
 - "**.context.inc"
 - "**.strongarm.inc"
-- "stanford_toggle_block.features.field_base.inc"
