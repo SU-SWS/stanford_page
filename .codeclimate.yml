@@ -11,9 +11,9 @@ engines:
     enabled: true
 ratings:
   paths:
-    "**.inc"
-    "**.module"
-    "**.profile"
+  - "**.inc"
+  - "**.module"
+  - "**.profile"
 ##exclude these files/paths
 exclude_paths:
-  "**.features.**"
+- "**.features.**"
