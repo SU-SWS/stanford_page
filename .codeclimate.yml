@@ -9,11 +9,9 @@ engines:
     enabled: true
   scss-lint:
     enabled: true
-ratings:
-  paths:
-    "**.inc"
-    "**.module"
-    "**.profile"
-##exclude these files/paths
+paths:
+  "**.inc"
+  "**.module"
+  "**.profile"
 exclude_paths:
   "**.features.**"
