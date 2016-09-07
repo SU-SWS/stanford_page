@@ -10,6 +10,6 @@ function bad_code() {
        $this = "reserved";
   if(!$this) {
   // Nothing
-  }else{ $that = $this; }
+  }else{ $that =$this; }
    return $notdefined;
 }
