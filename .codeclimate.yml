@@ -14,6 +14,3 @@ ratings:
   - "**.inc"
   - "**.module"
   - "**.profile"
-##exclude these files/paths
-exclude_paths:
-- "**.features.**"
