@@ -5,3 +5,11 @@
  */
 
 include_once 'stanford_page.features.inc';
+
+function bad_code() {
+       $this = "reserved";
+  if(!$this) {
+  // Nothing
+  }else{ $that = $this; }
+   return $notdefined;
+}
