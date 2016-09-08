@@ -5,8 +5,6 @@ engines:
     enabled: true
   phpcodesniffer:
     enabled: true
-    config:
-      standard: "Drupal"
   phpmd:
     enabled: true
   scss-lint:
@@ -18,9 +16,10 @@ ratings:
   - "**.profile"
   - "**.php"
   - "**.install"
-  - "**.js"
   - "**.css"
   - "**.scss"
+  - "**.sass"
+  - "**.js"
 ##exclude these files/paths
 exclude_paths:
 - "**.features.**"
@@ -29,4 +28,6 @@ exclude_paths:
 - "**.ds.inc"
 - "**.bean.inc"
 - "**.context.inc"
-- "**.strongarm.inc"
+- "test/**/*"
+- "**/vendor/**/*"
+- "**.min.*"
