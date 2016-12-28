@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.stanford_page
+  module:
+    - node
+id: node.stanford_page
+targetEntityType: node
+bundle: stanford_page
+types:
+  - 'schema:WebPage'
+fieldMappings: {  }
