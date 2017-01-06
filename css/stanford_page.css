@@ -1,0 +1,24 @@
+.node-type-stanford-page #main {
+  padding-top: 0;
+}
+.node-type-stanford-page #main > .container, .node-type-stanford-page #main .span12 {
+  width: 100%;
+}
+.node-type-stanford-page #main-content, .node-type-stanford-page #content {
+  margin-left: 0;
+}
+.node-type-stanford-page #page-title {
+  font-size: 0;
+  width: 0;
+  height: 0;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+}
+.node-type-stanford-page .content-head {
+  margin-bottom: 0;
+}
+.node-type-stanford-page .center-max, .node-type-stanford-page .tabs {
+  max-width: 1170px;
+  margin: 0 auto;
+}

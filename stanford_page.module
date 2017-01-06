@@ -5,3 +5,39 @@
  */
 
 include_once 'stanford_page.features.inc';
+
+/**
+ * Implements hook_theme_registry_alter().
+ *
+ * @see https://www.drupal.org/docs/7/creating-custom-modules/howtos/using-template-tplphp-files-in-your-own-module
+ */
+function stanford_page_theme_registry_alter(&$theme_registry) {
+  $module_path = drupal_get_path('module', 'stanford_page');
+  $template_file_objects = drupal_find_theme_templates($theme_registry, '.tpl.php', $module_path);
+  foreach ($template_file_objects as $key => $template_file_object) {
+    if (!isset($theme_registry[$key]['theme path']) || !preg_match('#/themes/#', $theme_registry[$key]['theme path'])) {
+      $theme_registry[$key]['theme path'] = $module_path;
+      $theme_registry[$key] = array_merge($theme_registry[$key], $template_file_object);
+      $theme_registry[$key]['type'] = 'module';
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function stanford_page_preprocess_page(&$vars) {
+  global $theme;
+  if (isset($vars['node']) && $theme == variable_get('theme_default', 'seven')) {
+    $vars['theme_hook_suggestions'][] = 'page__node__' . $vars['node']->type;
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function stanford_page_preprocess_node(&$vars) {
+  if ($vars['type'] == 'stanford_page' && $vars['page']) {
+    drupal_add_css(drupal_get_path('module', 'stanford_page') . '/css/stanford_page.css');
+  }
+}

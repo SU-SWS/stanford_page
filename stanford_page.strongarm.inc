@@ -80,6 +80,15 @@ function stanford_page_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
+      'stanford_cap' => array(
+        'custom_settings' => FALSE,
+      ),
+      'taxonomy' => array(
+        'custom_settings' => FALSE,
+      ),
+      'stanford_video_half_width' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -87,7 +96,13 @@ function stanford_page_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '2',
+        ),
+        'metatags' => array(
+          'weight' => '4',
+        ),
+        'redirect' => array(
+          'weight' => '3',
         ),
       ),
       'display' => array(),

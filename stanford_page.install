@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Stanford Page Type Updates.
+ */
+
+/**
+ * Update Stanford Page from 2.0 -> 3.0.
+ */
+function stanford_paragraph_types_update_7300(&$sandbox) {
+  // @todo Upgrade path.
+}
