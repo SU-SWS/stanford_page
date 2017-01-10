@@ -24,7 +24,8 @@
     margin-bottom: 0;
   }
 
-  .center-max, .tabs {
+  #content-wrapper > div:not(.content-body),
+  .center-max {
     max-width: 1170px;
     margin: 0 auto;
   }

@@ -18,6 +18,7 @@ dependencies[] = options
 dependencies[] = paragraphs
 dependencies[] = stanford_image
 dependencies[] = stanford_image_styles
+dependencies[] = stanford_paragraph_types
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text

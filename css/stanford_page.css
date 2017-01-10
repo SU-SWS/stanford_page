@@ -18,7 +18,8 @@
 .node-type-stanford-page .content-head {
   margin-bottom: 0;
 }
-.node-type-stanford-page .center-max, .node-type-stanford-page .tabs {
+.node-type-stanford-page #content-wrapper > div:not(.content-body),
+.node-type-stanford-page .center-max {
   max-width: 1170px;
   margin: 0 auto;
 }
