@@ -3,6 +3,7 @@
 }
 .node-type-stanford-page #main > .container, .node-type-stanford-page #main .span12 {
   width: 100%;
+  margin: 0;
 }
 .node-type-stanford-page #main-content, .node-type-stanford-page #content {
   margin-left: 0;
@@ -22,4 +23,5 @@
 .node-type-stanford-page .center-max {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 20px;
 }
