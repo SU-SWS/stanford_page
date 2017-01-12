@@ -43,3 +43,19 @@ function stanford_page_preprocess_node(&$vars) {
     drupal_add_css(drupal_get_path('module', 'stanford_page') . '/css/stanford_page.css');
   }
 }
+
+/**
+ * Implements hook_form_alter().
+ */
+function stanford_page_form_alter(&$form, &$form_state, $form_id) {
+  if (strpos($form_id, '_node_form') !== FALSE && isset($form['field_s_page_sections'])) {
+    foreach ($form['field_s_page_sections'][LANGUAGE_NONE] as &$section) {
+      if ($section['#bundle'] == 'p_cards') {
+        if ($section['field_p_cards_card']['und']['#max_delta'] == 2) {
+          // Prevents more than 3 items.
+          unset($section['field_p_cards_card']['und']['add_more']);
+        }
+      }
+    }
+  }
+}
