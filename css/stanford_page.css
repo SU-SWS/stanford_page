@@ -25,3 +25,7 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+.node-type-stanford-page .node.node-stanford-page > .content > div:not(.paragraphs-items) {
+  max-width: 1170px;
+  margin: 0 auto;
+}
