@@ -61,3 +61,4 @@ function stanford_page_preprocess_node(&$vars) {
     drupal_add_css(drupal_get_path('module', 'stanford_page') . '/css/stanford_page.css');
   }
 }
+
