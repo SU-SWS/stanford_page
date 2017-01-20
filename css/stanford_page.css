@@ -12,16 +12,3 @@
 .node-type-stanford-page .content-head {
   margin-bottom: 0;
 }
-<<<<<<< HEAD
-=======
-.node-type-stanford-page #content-wrapper > div:not(.content-body),
-.node-type-stanford-page .center-max {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-.node-type-stanford-page .node.node-stanford-page > .content > div:not(.paragraphs-items) {
-  max-width: 1170px;
-  margin: 0 auto;
-}
->>>>>>> ffd61edcdd1c41d4fc5709702b2fb07c3957a36f

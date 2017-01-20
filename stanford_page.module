@@ -34,6 +34,7 @@ function stanford_page_preprocess_html(&$vars) {
       'two-sidebars',
       'one-sidebar sidebar-second',
     );
+    // Strip out the above classes since some JS messes with classes.
     foreach ($remove_classes as $class) {
       if ($pos = array_search($class, $vars['classes_array'])) {
         unset($vars['classes_array'][$pos]);
@@ -61,4 +62,3 @@ function stanford_page_preprocess_node(&$vars) {
     drupal_add_css(drupal_get_path('module', 'stanford_page') . '/css/stanford_page.css');
   }
 }
-
