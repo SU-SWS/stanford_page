@@ -12,3 +12,7 @@
 .node-type-stanford-page .content-head {
   margin-bottom: 0;
 }
+.node-type-stanford-page #main .region:not(.region-content) {
+  max-width: 1170px;
+  margin: 0 auto;
+}
