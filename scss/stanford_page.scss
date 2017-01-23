@@ -13,8 +13,11 @@
   .content-head {
     margin-bottom: 0;
   }
-  #main .region:not(.region-content){
-    max-width:1170px;
-    margin:0 auto;
+
+  // Allows all the other various regions we have to still look normal.
+  #main .region:not(.region-content),
+  #content-wrapper > div:not(.content-body) {
+    max-width: 1170px;
+    margin: 0 auto;
   }
 }
