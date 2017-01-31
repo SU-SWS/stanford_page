@@ -37,6 +37,8 @@ engines:
         enabled: false
       LeadingZero:
         enabled: false
+      EmptyLineBetweenBlocks:
+        enabled: false
   phpcodesniffer:
     enabled: true
     checks:
@@ -137,3 +139,5 @@ exclude_paths:
 - "**/vendor/"
 - "**.api.php"
 - "*.twig"
+- "**.tpl.php"
+- "**.strongarm.inc"

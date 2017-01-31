@@ -1,3 +1,11 @@
+<?php
+
+/**
+ * @file
+ * Stanford Page 3.0 Template file.
+ */
+?>
+
 <div id="wrap" <?php if ($site_title_position_classes): ?>class="<?php print $site_title_position_classes; ?>"<?php endif; ?>> <a href="#main" class="element-invisible element-focusable"><?php print t('Skip to content'); ?></a>
   <?php if ($main_menu): ?>
     <a href="#main-nav" class="element-invisible element-focusable"><?php print t('Skip to navigation'); ?></a>
