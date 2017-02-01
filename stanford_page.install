@@ -45,16 +45,34 @@ function stanford_page_update_7301(&$sandbox) {
         }
       }
     }
+
+    $from_to = array(
+      'field_s_page_file' => 'field_p_menu_image_insert',
+      'field_s_page_image_insert' => 'field_p_menu_file_insert',
+    );
+    foreach ($from_to as $from => $to) {
+      if ($items = field_get_items('node', $node, $from)) {
+        $paragraph->{$to}[LANGUAGE_NONE] = $items;
+      }
+    }
     $paragraph->save();
   }
 }
+
 
 /**
  * Delete old fields.
  */
 function stanford_page_update_7302(&$sandbox) {
-  $instance = field_info_instance('node', 'body', 'stanford_page');
-  field_delete_instance($instance);
-  $instance = field_info_instance('node', 'field_s_image_info', 'stanford_page');
-  field_delete_instance($instance);
+  $fields = array(
+    'body',
+    'field_s_image_info',
+    'field_s_image_image',
+    'field_s_image_caption',
+  );
+  foreach ($fields as $field) {
+    if ($instance = field_info_instance('node', $field, 'stanford_page')) {
+      field_delete_instance($instance);
+    }
+  }
 }
