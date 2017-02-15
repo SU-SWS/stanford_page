@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * @file
+ * Stanford Page Type Updates.
+ */
+
+/**
+ * Enable dependencies and revert feature.
+ */
+function stanford_page_update_7300(&$sandbox) {
+  module_enable(array('stanford_paragraph_types'));
+  features_revert_module('stanford_page');
+}
+
+/**
+ * Update Stanford Page from 2.0 -> 3.0.
+ */
+function stanford_page_update_7301(&$sandbox) {
+  $query = db_select('node', 'n')
+    ->fields('n', array('nid'))
+    ->condition('type', 'stanford_page')
+    ->execute();
+  while ($nid = $query->fetchField()) {
+    $node = node_load($nid);
+    $paragraph = new ParagraphsItemEntity(array(
+      'field_name' => 'field_s_page_sections',
+      'bundle' => 'p_menu',
+    ));
+    $paragraph->is_new = TRUE;
+    $paragraph->setHostEntity('node', $node);
+
+    if (!empty($node->body)) {
+      $paragraph->field_p_menu_wysiwyg = $node->body;
+    }
+    if ($items = field_get_items('node', $node, 'field_s_image_info')) {
+      $collection = field_collection_item_load($items[0]['value']);
+      $from_to = array(
+        'field_s_image_image' => 'field_p_menu_image',
+        'field_s_image_caption' => 'field_p_menu_image_caption',
+      );
+      foreach ($from_to as $from => $to) {
+        if (!empty($collection->{$from})) {
+          $paragraph->{$to} = $collection->{$from};
+        }
+      }
+    }
+
+    $from_to = array(
+      'field_s_page_image_insert' => 'field_p_menu_image_insert',
+      'field_s_page_file' => 'field_p_menu_file_insert',
+    );
+    foreach ($from_to as $from => $to) {
+      if (!empty($node->{$from})) {
+        $paragraph->{$to} = $node->{$from};
+      }
+    }
+
+    $paragraph->save();
+  }
+}
+
+
+/**
+ * Delete old fields.
+ */
+function stanford_page_update_7302(&$sandbox) {
+  $fields = array(
+    'body',
+    'field_s_image_info',
+    'field_s_page_file',
+    'field_s_page_image_insert',
+  );
+  foreach ($fields as $field) {
+    if ($instance = field_info_instance('node', $field, 'stanford_page')) {
+      field_delete_instance($instance);
+    }
+  }
+}
