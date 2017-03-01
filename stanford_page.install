@@ -9,7 +9,16 @@
  * Enable dependencies and revert feature.
  */
 function stanford_page_update_7300(&$sandbox) {
-  module_enable(array('stanford_paragraph_types'));
+  if (!module_exists('stanford_paragraph_types')) {
+    if (!module_enable(array('stanford_paragraph_types'))) {
+      watchdog('stanford_page', 'Could not enable stanford_paragraph_types module');
+      throw new DrupalUpdateException("Could not enable stanford_paragraph_types module. Please check that the module & its dependencies exists.");
+    }
+    else {
+      watchdog('stanford_page', 'Enabled stanford_paragraph_types module.');
+    }
+  }
+
   features_revert_module('stanford_page');
 }
 
