@@ -96,13 +96,13 @@ function stanford_page_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '2',
+          'weight' => '3',
         ),
         'metatags' => array(
-          'weight' => '4',
+          'weight' => '5',
         ),
         'redirect' => array(
-          'weight' => '3',
+          'weight' => '4',
         ),
       ),
       'display' => array(),

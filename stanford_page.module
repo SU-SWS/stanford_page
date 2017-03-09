@@ -53,6 +53,17 @@ function stanford_page_preprocess_page(&$vars) {
   if (isset($vars['node']) && $theme == variable_get('theme_default', 'seven')) {
     // Adds a new theme file per node type, such as page--node--article.tpl.php.
     $vars['theme_hook_suggestions'][] = 'page__node__' . $vars['node']->type;
+
+    if ($vars['node']->type == 'stanford_page' && !empty($vars['node']->field_s_page_hide_title)) {
+      if ($vars['node']->field_s_page_hide_title[LANGUAGE_NONE][0]['value']) {
+        if (isset($vars['site_title_position_classes'])) {
+          $vars['site_title_position_classes'] .= ' hide-title';
+        }
+        else {
+          $vars['site_title_position_classes'] = 'hide-title';
+        }
+      }
+    }
   }
 }
 
