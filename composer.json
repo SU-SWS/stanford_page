@@ -1,0 +1,10 @@
+{
+  "name": "su-sws/stanford_page",
+  "description": "Stanford Page",
+  "type": "stanford-module",
+  "homepage": "https://github.com/SU-SWS/stanford_page",
+  "authors": [],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": {}
+}

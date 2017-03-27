@@ -1,0 +1,14 @@
+uuid: 8081293d-24ad-4c8a-81cb-2d3d2d019be2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.stanford_page
+  module:
+    - node
+id: node.stanford_page
+targetEntityType: node
+bundle: stanford_page
+types:
+  - ''
+fieldMappings: {  }
