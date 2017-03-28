@@ -60,3 +60,9 @@
 #     js/script.js: {}
 #   dependencies:
 #     - core/jquery
+
+page_layout:
+  version: VERSION
+  css:
+    theme:
+      css/components.css: {}
