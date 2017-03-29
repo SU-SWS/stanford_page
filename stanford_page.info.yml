@@ -5,10 +5,12 @@ core: 8.x
 package: Stanford
 version: 8.x-3.0-dev
 dependencies:
+  - ds
   - field
   - layout_plugin
   - menu_ui
   - node
+  - panelizer
   - path
   - rdf
   - scheduler

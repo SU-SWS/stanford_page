@@ -19,10 +19,10 @@ function stanford_page_theme($existing, $type, $thing, $path) {
   ];
 
   // Tell Drupal about the secondary sidebar menu.
-  $theme['menu__secondary__sidebar__menu'] = [
+  $theme['block__menu_block__secondary__sidebar__menu'] = [
     'theme path' => drupal_get_path('module', 'stanford_page'),
     'path' => drupal_get_path('module', 'stanford_page') . "/templates",
-    'base hook' => 'menu__main',
+    'base hook' => 'block',
   ];
 
   return $theme;

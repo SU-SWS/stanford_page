@@ -1,0 +1,6 @@
+{% extends "@block/block.html.twig" %}
+{% set attributes = attributes.addClass('menu-block__secondary__sidebar') %}
+{% block content %}
+  {{ attach_library('stanford_page/page_layout') }}
+  {{ content }}
+{% endblock %}

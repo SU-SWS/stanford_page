@@ -1,0 +1,21 @@
+uuid: 3d8e17aa-3467-4c1c-a5f2-fa1d65f8608a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.panelizer
+    - node.type.stanford_page
+  module:
+    - panelizer
+id: node.stanford_page.panelizer
+field_name: panelizer
+entity_type: node
+bundle: stanford_page
+label: Panelizer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: panelizer
