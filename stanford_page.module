@@ -25,5 +25,12 @@ function stanford_page_theme($existing, $type, $thing, $path) {
     'base hook' => 'block',
   ];
 
+  // Tell Drupal about the caption field
+  $theme['field__node__field_s_page_ft_img_cpt'] = [
+    'theme path' => drupal_get_path('module', 'stanford_page'),
+    'path' => drupal_get_path('module', 'stanford_page') . "/templates",
+    'base hook' => 'field',
+  ];
+
   return $theme;
 }

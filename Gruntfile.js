@@ -80,11 +80,10 @@ module.exports = function(grunt) {
       dist: {
         files: {
           // Compiled styles.
-          'css/components.css':         'scss/components/components.scss',
-          'css/layout.css':             'scss/layout/layout.scss',
-          'css/states.css':             'scss/states/states.scss',
-          'css/theme.css':              'scss/theme/theme.scss',
-          'css/print.css':              'scss/theme/print.scss'
+          'css/components.css':         'scss/components.scss',
+          'css/states.css':             'scss/states.scss',
+          'css/theme.css':              'scss/theme.scss',
+          'css/print.css':              'scss/print.scss'
         }
       }
     },

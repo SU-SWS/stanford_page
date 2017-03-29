@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+////
+/// Components related structure.
+////
+
+@import "decanter/core/utilities/decanter-utilities";
+
+.image--caption {
+  text-align: center;
+  padding: 0 10%;
+}
