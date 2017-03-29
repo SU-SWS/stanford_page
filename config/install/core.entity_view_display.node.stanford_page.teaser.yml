@@ -1,0 +1,33 @@
+uuid: 978c98d3-873c-4917-bc2b-41da54c9f88e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.stanford_page.body
+    - node.type.stanford_page
+  module:
+    - text
+    - user
+id: node.stanford_page.teaser
+targetEntityType: node
+bundle: stanford_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }
