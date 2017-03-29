@@ -14,5 +14,7 @@ dependencies:
   - path
   - rdf
   - scheduler
+  - stanford_components
   - text
+  - ui_patterns
   - user

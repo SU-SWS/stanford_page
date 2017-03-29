@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.panelizer
     - node.type.stanford_page
   module:
     - panelizer
