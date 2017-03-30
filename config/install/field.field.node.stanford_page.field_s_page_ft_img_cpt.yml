@@ -1,0 +1,19 @@
+uuid: c9f7c3c8-2563-43e7-b456-efe741a40734
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_s_page_ft_img_cpt
+    - node.type.stanford_page
+id: node.stanford_page.field_s_page_ft_img_cpt
+field_name: field_s_page_ft_img_cpt
+entity_type: node
+bundle: stanford_page
+label: 'Featured Image Caption'
+description: 'This caption appears below the featured image but above the main content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

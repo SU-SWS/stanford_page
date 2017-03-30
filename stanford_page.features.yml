@@ -1,1 +1,14 @@
-required: true
+required:
+  - core.entity_form_display.node.stanford_page.default
+  - core.entity_view_display.node.stanford_page.default
+  - core.entity_view_display.node.stanford_page.full
+  - core.entity_view_display.node.stanford_page.teaser
+  - field.field.node.stanford_page.field_s_page_ft_img
+  - field.field.node.stanford_page.field_s_page_ft_img_cpt
+  - field.field.node.stanford_page.panelizer
+  - field.storage.node.panelizer
+  - node.type.stanford_page
+  - rdf.mapping.node.stanford_page
+optional:
+  - image.style.max_325x325
+  - simple_sitemap.bundle_settings.node.stanford_page
