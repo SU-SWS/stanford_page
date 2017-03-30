@@ -1,4 +1,3 @@
-uuid: 6c849403-47e1-4f28-a257-23292538d081
 langcode: en
 status: false
 dependencies:
@@ -14,6 +13,7 @@ dependencies:
     - image
     - panelizer
     - text
+    - title
     - user
 third_party_settings:
   panelizer:
@@ -120,11 +120,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   title:
-    label: hidden
-    type: string
-    weight: 115
+    type: linked_and_wrapped
     settings:
-      link_to_entity: false
+      tag: h1
+      linked: false
+      classes: ''
+    weight: -5
+    label: above
     third_party_settings: {  }
 hidden:
   panelizer: true

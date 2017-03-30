@@ -20,5 +20,6 @@ dependencies:
   - scheduler
   - stanford_components
   - text
+  - title
   - ui_patterns
   - user
