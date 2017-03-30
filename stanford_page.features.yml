@@ -11,5 +11,7 @@ required:
   - field.field.node.stanford_page.field_s_page_ft_img_cpt
   - field.field.node.stanford_page.panelizer
   - field.storage.node.panelizer
+  - field.storage.node.field_s_page_ft_img
+  - field.storage.node.field_s_page_ft_img_cpt
   - node.type.stanford_page
   - rdf.mapping.node.stanford_page
