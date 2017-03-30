@@ -32,5 +32,34 @@ function stanford_page_theme($existing, $type, $thing, $path) {
     'base hook' => 'field',
   ];
 
+  // Tell Drupal about the menu
+  $theme['menu__secondary__sidebar__menu'] = [
+    'theme path' => drupal_get_path('module', 'stanford_page'),
+    'path' => drupal_get_path('module', 'stanford_page') . "/templates",
+    'base hook' => 'menu',
+  ];
+
   return $theme;
+}
+
+/**
+ * Attach some CSS to the page.
+ * @param  [type] $vars [description]
+ * @return [type]       [description]
+ */
+function stanford_page_preprocess_page(&$vars) {
+
+  // Get the node from the route.
+  $node = \Drupal::routeMatch()->getParameter('node');
+
+  // Not a node.. Then just continue.
+  if (!$node) {
+    return;
+  }
+
+  // Check for our type and add library if a match.
+  if ($node->getType() == "stanford_page") {
+    $vars['#attached']['library'][] = "stanford_page/page";
+  }
+
 }

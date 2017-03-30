@@ -1,4 +1,5 @@
-{% attributes.addClass('image--caption') %}
-<p {{attribtues}}>
-  {{ content }}
-</p>
+<div{{ attributes.addClass('image--caption') }}>
+  {% for item in items %}
+    <p{{ item.attributes }}>{{ item.content }}</p>
+  {% endfor %}
+</div>

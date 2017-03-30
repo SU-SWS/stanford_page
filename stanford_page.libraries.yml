@@ -61,8 +61,14 @@
 #   dependencies:
 #     - core/jquery
 
-page_layout:
+page:
   version: VERSION
   css:
-    theme:
+    base:
+      css/print.css: { media: print }
+    component:
       css/components.css: {}
+    state:
+      css/states.css: {}
+    theme:
+      css/theme.css: {}
