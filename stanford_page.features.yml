@@ -1,3 +1,7 @@
+excluded:
+  - image.style.max_1300x1300
+  - image.style.max_2600x2600
+  - image.style.max_650x650
 required:
   - core.entity_form_display.node.stanford_page.default
   - core.entity_view_display.node.stanford_page.default
@@ -9,6 +13,3 @@ required:
   - field.storage.node.panelizer
   - node.type.stanford_page
   - rdf.mapping.node.stanford_page
-optional:
-  - image.style.max_325x325
-  - simple_sitemap.bundle_settings.node.stanford_page

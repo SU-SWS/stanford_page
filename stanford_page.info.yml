@@ -15,6 +15,7 @@ dependencies:
   - panelizer
   - path
   - rdf
+  - responsive_image
   - scheduler
   - stanford_components
   - text
