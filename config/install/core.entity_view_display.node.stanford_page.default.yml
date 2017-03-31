@@ -111,7 +111,7 @@ third_party_settings:
         weight: 0
         layout: plakes-left
         layout_settings: {  }
-        page_title: '[node:title]'
+        page_title: ''
         storage_type: panelizer_default
         storage_id: 'node:stanford_page:default:default'
         builder: ipe
@@ -153,13 +153,6 @@ content:
   links:
     weight: 0
     settings: {  }
-    third_party_settings: {  }
-  title:
-    label: hidden
-    type: string
-    weight: 122
-    settings:
-      link_to_entity: false
     third_party_settings: {  }
 hidden:
   panelizer: true
