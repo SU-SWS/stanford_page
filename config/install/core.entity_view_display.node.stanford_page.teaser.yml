@@ -10,7 +10,6 @@ dependencies:
     - node.type.stanford_page
   module:
     - text
-    - title
     - user
 id: node.stanford_page.teaser
 targetEntityType: node

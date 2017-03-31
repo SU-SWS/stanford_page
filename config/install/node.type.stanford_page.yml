@@ -4,7 +4,6 @@ dependencies:
   module:
     - menu_ui
     - scheduler
-    - title
 third_party_settings:
   menu_ui:
     available_menus:
@@ -21,8 +20,6 @@ third_party_settings:
     unpublish_enable: true
     unpublish_required: false
     unpublish_revision: false
-  title:
-    display_configurable_title: true
 name: 'Basic Page'
 type: stanford_page
 description: 'A basic page with title and wysiwyg.'
