@@ -1,3 +1,4 @@
+uuid: 5df066dc-1e3d-46be-8f74-d33e1651e60a
 langcode: en
 status: true
 dependencies:
@@ -110,7 +111,7 @@ third_party_settings:
         weight: 0
         layout: plakes-left
         layout_settings: {  }
-        page_title: ''
+        page_title: '[node:title]'
         storage_type: panelizer_default
         storage_id: 'node:stanford_page:default:default'
         builder: ipe
@@ -154,13 +155,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   title:
-    type: linked_and_wrapped
+    label: hidden
+    type: string
+    weight: 122
     settings:
-      tag: h1
-      linked: false
-      classes: ''
-    weight: -5
-    label: above
+      link_to_entity: false
     third_party_settings: {  }
 hidden:
   panelizer: true
