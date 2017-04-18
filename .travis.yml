@@ -82,6 +82,13 @@ mysql:
   username: root
   encoding: utf8
 
+addons:
+  browserstack:
+    username:
+      secure: "$BROWSERSTACK_USER"
+    access_key:
+      secure: "$BROWSERSTACK_KEY"
+
 before_install:
   # download external repository with Stanford Travis CI scripts
   - if [ ! -z $SCRIPTS_BRANCH ]; then SCRIPTS_BRANCH="-b $SCRIPTS_BRANCH"; fi
