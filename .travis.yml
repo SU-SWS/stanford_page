@@ -62,6 +62,12 @@ php:
 
 sudo: required
 
+addons:
+  browserstack:
+    username: "$BROWSERSTACK_USER"
+    access_key: "$BROWSERSTACK_KEY"
+    forcelocal: true
+
 cache:
   directories:
     - $HOME/.cache
