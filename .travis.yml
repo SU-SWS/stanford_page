@@ -64,9 +64,9 @@ sudo: required
 
 addons:
   browserstack:
-    username: "$BROWSERSTACK_USER"
+    username: $BROWSERSTACK_USER
     access_key:
-      secure: "$BROWSERSTACK_KEY"
+      secure: $BROWSERSTACK_KEY
     forcelocal: true
 
 cache:
