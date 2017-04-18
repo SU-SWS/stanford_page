@@ -84,10 +84,8 @@ mysql:
 
 addons:
   browserstack:
-    username:
-      secure: "$BROWSERSTACK_USER"
-    access_key:
-      secure: "$BROWSERSTACK_KEY"
+    username: "$USER"
+    access_key: "$KEY"
 
 before_install:
   # download external repository with Stanford Travis CI scripts
