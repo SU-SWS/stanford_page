@@ -63,7 +63,7 @@ env:
     - DEPLOYER_BRANCH=""
     - DRUPAL_PROFILE_BRANCH=""
     - CLICKY_BRANCH=""
-    - SCRIPTS_BRANCH=""
+    - SCRIPTS_BRANCH="browserstack"
 
 language: php
 php:
@@ -81,11 +81,6 @@ mysql:
   database: drupal
   username: root
   encoding: utf8
-
-addons:
-  browserstack:
-    username: "$USER"
-    access_key: "$KEY"
 
 before_install:
   # download external repository with Stanford Travis CI scripts
