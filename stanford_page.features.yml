@@ -5,7 +5,6 @@ excluded:
 required:
   - core.entity_form_display.node.stanford_page.default
   - core.entity_view_display.node.stanford_page.default
-  - core.entity_view_display.node.stanford_page.full
   - core.entity_view_display.node.stanford_page.teaser
   - field.field.node.stanford_page.field_s_page_ft_img
   - field.field.node.stanford_page.field_s_page_ft_img_cpt

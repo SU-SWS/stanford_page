@@ -109,7 +109,7 @@ third_party_settings:
         label: Default
         uuid: 4ee015da-e9df-4064-8f6c-a70a195edd66
         weight: 0
-        layout: plakes-left
+        layout: layout_plakes-left
         layout_settings: {  }
         page_title: ''
         storage_type: panelizer_default

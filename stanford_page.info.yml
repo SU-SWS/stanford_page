@@ -5,7 +5,7 @@ core: 8.x
 package: Stanford
 version: 8.x-3.0-dev
 dependencies:
-  - drupal:system (>= 8.3.x)
+  - system (>= 8.3.x)
   - ds
   - field
   - file
