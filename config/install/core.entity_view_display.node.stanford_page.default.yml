@@ -1,4 +1,3 @@
-uuid: 5df066dc-1e3d-46be-8f74-d33e1651e60a
 langcode: en
 status: true
 dependencies:
@@ -135,6 +134,7 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_s_page_ft_img:
     weight: 111
     label: above
@@ -143,6 +143,7 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
   field_s_page_ft_img_cpt:
     weight: 112
     label: above
@@ -150,9 +151,11 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
   links:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   panelizer: true

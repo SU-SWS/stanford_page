@@ -1,10 +1,12 @@
-uuid: 978c98d3-873c-4917-bc2b-41da54c9f88e
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.stanford_page.body
+    - field.field.node.stanford_page.field_s_page_ft_img
+    - field.field.node.stanford_page.field_s_page_ft_img_cpt
+    - field.field.node.stanford_page.panelizer
     - node.type.stanford_page
   module:
     - text
@@ -21,13 +23,11 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+    region: content
   links:
     weight: 100
-  title:
-    label: hidden
-    type: string
-    weight: -5
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-hidden: {  }
+    region: content
+hidden:
+  field_s_page_ft_img: true
+  field_s_page_ft_img_cpt: true
+  panelizer: true

@@ -5,7 +5,6 @@ core: 8.x
 package: Stanford
 version: 8.x-3.0-dev
 dependencies:
-  - system (>= 8.3.x)
   - ds
   - field
   - file
@@ -20,6 +19,7 @@ dependencies:
   - responsive_image
   - scheduler
   - stanford_components
+  - system (>= 8.3.x)
   - text
   - ui_patterns
   - user

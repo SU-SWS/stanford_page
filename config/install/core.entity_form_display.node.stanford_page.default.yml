@@ -1,4 +1,3 @@
-uuid: fb756abe-b255-495d-882c-0212456b1e3c
 langcode: en
 status: true
 dependencies:
@@ -27,11 +26,13 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+    region: content
   created:
     type: datetime_timestamp
     weight: 5
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_s_page_ft_img:
     weight: 1
     settings:
@@ -39,6 +40,7 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: image_image
+    region: content
   field_s_page_ft_img_cpt:
     weight: 2
     settings:
@@ -46,32 +48,38 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
   path:
     type: path
     weight: 10
     settings: {  }
     third_party_settings: {  }
+    region: content
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
     weight: 6
     third_party_settings: {  }
+    region: content
   publish_on:
     type: datetime_timestamp_no_default
     weight: 11
     settings: {  }
     third_party_settings: {  }
+    region: content
   scheduler_settings:
     weight: 8
     settings: {  }
     third_party_settings: {  }
+    region: content
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
     weight: 7
     third_party_settings: {  }
+    region: content
   title:
     type: string_textfield
     weight: 0
@@ -79,6 +87,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 4
@@ -87,10 +96,12 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   unpublish_on:
     type: datetime_timestamp_no_default
     weight: 9
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   panelizer: true
