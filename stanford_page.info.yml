@@ -18,8 +18,6 @@ dependencies:
   - rdf
   - responsive_image
   - scheduler
-  - stanford_components
   - system (>= 8.3.x)
   - text
-  - ui_patterns
   - user
