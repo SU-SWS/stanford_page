@@ -32,13 +32,6 @@ function stanford_page_theme($existing, $type, $thing, $path) {
     'base hook' => 'field',
   ];
 
-  // Tell Drupal about the menu
-  $theme['menu__secondary__sidebar__menu'] = [
-    'theme path' => drupal_get_path('module', 'stanford_page'),
-    'path' => drupal_get_path('module', 'stanford_page') . "/templates",
-    'base hook' => 'menu',
-  ];
-
   return $theme;
 }
 
