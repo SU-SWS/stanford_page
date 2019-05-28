@@ -1,7 +1,7 @@
 # [Stanford Page](https://github.com/SU-SWS/stanford_page)
-##### Version: 8.x-1.0-dev
+##### Version: 8.x-2.0-dev
 
-Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.com/sherakama)  
+Maintainers: [boznik](https://github.com/boznik), [sherakama](https://github.com/sherakama)  
 
 Changelog: [Changelog.txt](CHANGELOG.txt)
 

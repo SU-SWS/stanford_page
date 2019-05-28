@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.stanford_page.body
     - field.field.node.stanford_page.field_s_page_ft_img
     - field.field.node.stanford_page.field_s_page_ft_img_cpt
-    - field.field.node.stanford_page.panelizer
     - node.type.stanford_page
   module:
     - text
@@ -30,4 +29,3 @@ content:
 hidden:
   field_s_page_ft_img: true
   field_s_page_ft_img_cpt: true
-  panelizer: true

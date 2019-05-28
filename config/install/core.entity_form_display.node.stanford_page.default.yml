@@ -5,7 +5,6 @@ dependencies:
     - field.field.node.stanford_page.body
     - field.field.node.stanford_page.field_s_page_ft_img
     - field.field.node.stanford_page.field_s_page_ft_img_cpt
-    - field.field.node.stanford_page.panelizer
     - image.style.max_325x325
     - node.type.stanford_page
   module:
@@ -103,5 +102,3 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden:
-  panelizer: true

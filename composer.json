@@ -6,5 +6,11 @@
   "authors": [],
   "license": "GPL-2.0+",
   "minimum-stability": "dev",
-  "require": {}
+  "require": {
+    "drupal/ds": "~3.3"
+  },
+  "suggest": {
+    "drupal/simple_sitemap": "Every webpage needs an automatic XML sitemap generator for SEO reasons",
+    "drupal/scheduler": "Scheduler gives content editors the ability to schedule nodes to be published and unpublished at specified dates and times in the future."
+  }
 }

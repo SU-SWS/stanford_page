@@ -7,35 +7,6 @@
  */
 
 /**
- * Implements hook_theme().
- */
-function stanford_page_theme($existing, $type, $thing, $path) {
-
-  // Tell Drupal About the Page Title Template.
-  $theme['field__node__title__stanford_page'] = [
-    'theme path' => drupal_get_path('module', 'stanford_page'),
-    'path' => drupal_get_path('module', 'stanford_page') . "/templates",
-    'base hook' => 'field__node__title',
-  ];
-
-  // Tell Drupal about the secondary sidebar menu.
-  $theme['block__menu_block__secondary__sidebar__menu'] = [
-    'theme path' => drupal_get_path('module', 'stanford_page'),
-    'path' => drupal_get_path('module', 'stanford_page') . "/templates",
-    'base hook' => 'block',
-  ];
-
-  // Tell Drupal about the caption field
-  $theme['field__node__field_s_page_ft_img_cpt'] = [
-    'theme path' => drupal_get_path('module', 'stanford_page'),
-    'path' => drupal_get_path('module', 'stanford_page') . "/templates",
-    'base hook' => 'field',
-  ];
-
-  return $theme;
-}
-
-/**
  * Attach some CSS to the page.
  * @param  [type] $vars [description]
  * @return [type]       [description]

@@ -8,16 +8,12 @@ dependencies:
   - ds
   - field
   - file
-  - filefield_paths
   - image
-  - layout_discovery
   - menu_ui
   - node
-  - panelizer
   - path
   - rdf
   - responsive_image
-  - scheduler
-  - system (>= 8.3.x)
+  - system (>= 8.6.x)
   - text
   - user
