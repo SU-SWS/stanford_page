@@ -5,7 +5,6 @@ dependencies:
     - field.storage.node.field_s_page_ft_img
     - node.type.stanford_page
   module:
-    - filefield_paths
     - image
 third_party_settings:
   filefield_paths:

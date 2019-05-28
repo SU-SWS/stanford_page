@@ -10,7 +10,6 @@ dependencies:
   module:
     - image
     - path
-    - scheduler
     - text
 id: node.stanford_page.default
 targetEntityType: node
@@ -61,17 +60,6 @@ content:
     weight: 6
     third_party_settings: {  }
     region: content
-  publish_on:
-    type: datetime_timestamp_no_default
-    weight: 11
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  scheduler_settings:
-    weight: 8
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   sticky:
     type: boolean_checkbox
     settings:
@@ -94,11 +82,5 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-    region: content
-  unpublish_on:
-    type: datetime_timestamp_no_default
-    weight: 9
-    settings: {  }
     third_party_settings: {  }
     region: content
