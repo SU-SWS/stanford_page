@@ -42,7 +42,7 @@ content:
     region: content
   field_s_page_ft_img_cpt:
     weight: 112
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

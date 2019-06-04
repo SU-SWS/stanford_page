@@ -6,6 +6,7 @@ dependencies:
     - node.type.stanford_page
   module:
     - image
+    - filefield_paths
 third_party_settings:
   filefield_paths:
     enabled: true

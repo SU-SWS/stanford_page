@@ -7,7 +7,8 @@
   "license": "GPL-2.0+",
   "minimum-stability": "dev",
   "require": {
-    "drupal/ds": "~3.3"
+    "drupal/ds": "~3.3",
+    "drupal/filefield_paths": "~1.0@beta"
   },
   "suggest": {
     "drupal/simple_sitemap": "Every webpage needs an automatic XML sitemap generator for SEO reasons",
