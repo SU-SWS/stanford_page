@@ -8,6 +8,7 @@ dependencies:
   - ds
   - field
   - file
+  - filefield_paths
   - image
   - menu_ui
   - node
