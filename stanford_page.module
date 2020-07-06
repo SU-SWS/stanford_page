@@ -17,7 +17,8 @@ function stanford_page_preprocess_page(&$vars) {
   $node = \Drupal::routeMatch()->getParameter('node');
 
   // Not a node.. Then just continue.
-  if (!$node) {
+  if (empty($node) || !is_object($node) ||
+    get_class($node) !== 'Drupal\node\Entity\Node') {
     return;
   }
 
